@@ -26,9 +26,9 @@ const WaterReminder = () => {
       '喝水提醒',
       {
         body: `已经过去${timeMsg}了，建议喝水${recommendedWaterPerHour}ml，保持健康水分摄入！\n今日已喝水量：${waterIntake}ml`,
-        tag: 'water-reminder',
       }
     );
+    console.log('notification', notification);
 
     // 点击通知时增加水分摄入量
     notification?.addEventListener('click', () => {
@@ -97,6 +97,11 @@ const WaterReminder = () => {
           <GlassWater className="h-6 w-6" />
           喝水助手
         </CardTitle>
+        <Button onClick={() => {
+          show('4123423')
+        }}>
+          41234412
+        </Button>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="flex flex-col gap-4">
