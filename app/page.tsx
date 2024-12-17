@@ -26,7 +26,6 @@ const WaterReminder = () => {
       '喝水提醒',
       {
         body: `已经过去${timeMsg}了，建议喝水${recommendedWaterPerHour}ml，保持健康水分摄入！\n今日已喝水量：${waterIntake}ml`,
-        icon: '/api/placeholder/64/64',
         tag: 'water-reminder',
         requireInteraction: true
       }
